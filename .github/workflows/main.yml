@@ -57,7 +57,7 @@ jobs:
                        model=G973F               \
                        name="Rg-Cruel"           \
                        toolchain=$TOOLCHAIN      \
-                       +magisk=v24.3             \
+                       +magisk=v25.1             \
                        +nohardening              \
                        +ttl                      \
                        +wireguard                \
