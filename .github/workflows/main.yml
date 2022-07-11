@@ -54,8 +54,8 @@ jobs:
         run: |
           set -e -o pipefail
           ./cruelbuild config                    \
-                       model=${{ matrix.model }} \
-                       name="Cruel-devel"        \
+                       model=G973F               \
+                       name="Rg-Cruel"           \
                        toolchain=$TOOLCHAIN      \
                        +magisk=v24.3             \
                        +nohardening              \
@@ -66,6 +66,7 @@ jobs:
                        +ntfs                     \
                        +force_dex_wqhd           \
                        +morosound                \
+                       os_patch_level=2022/7	 \
                        +boeffla_wl_blocker       \
           2>&1 | tee config.info
 
